@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benizoba - House Painting Services</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" data-aos="fade-down">
+        <div class="logo">Benizoba</div>
+
+        <button id="menuToggle"><i class="fas fa-bars"></i></button>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="quote-btn">Get Quote</a></li>
+        </ul>
+
+        <!-- Dark Mode Toggle -->
+        <button id="modeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+    
+    
+    
+    
+    <section class="hero">
+    <div class="slider">
+        <div class="slide active" style="background-image: url('assets/images/h2.png');">
+            <div class="overlay"></div>
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Bringing Colors to Life</h1>
+                <p>Transform your home with our expert painting services.</p>
+                <a href="#" class="quote-btn">Get a Free Quote</a>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: url('assets/images/h3.png');">
+            <div class="overlay"></div>
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Professional House Painting</h1>
+                <p>Enhance the beauty of your space with quality paintwork.</p>
+                <a href="#" class="quote-btn">Get a Free Quote</a>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: url('assets/images/h1.png');">
+            <div class="overlay"></div>
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Elegant & Durable Finishes</h1>
+                <p>We deliver long-lasting and visually appealing results.</p>
+                <a href="#" class="quote-btn">Get a Free Quote</a>
+            </div>
+        </div>
+
+        <!-- Square Indicators -->
+        <div class="slider-indicators">
+            <span class="indicator active" onclick="currentSlide(0)"></span>
+            <span class="indicator" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="about" class="about">
+    <div class="container">
+        <div class="about-text" data-aos="fade-right">
+            <h2>About Us</h2>
+            <p>
+                We are a professional house painting company dedicated to 
+                transforming homes with high-quality paints and expert craftsmanship. 
+            </p>
+            <p data-aos="fade-up" data-aos-delay="200">
+                With years of experience, we bring your vision to life, offering 
+                a range of interior and exterior painting services tailored to your needs.
+            </p>
+            <a href="#" class="learn-more" data-aos="fade-up" data-aos-delay="400">Learn More</a>
+        </div>
+        <div class="about-image" data-aos="fade-right">
+            <img src="assets/images/3.jpg" alt="About Us">
+        </div>
+    </div>
+</section>
+
+
+<section id="services" class="services">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-paint-roller"></i>
+                <h3>Interior Painting</h3>
+                <p>Give your home a fresh, modern look with our expert interior painting services.</p>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-brush"></i>
+                <h3>Exterior Painting</h3>
+                <p>Protect and beautify your home's exterior with high-quality paints and finishes.</p>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-building"></i>
+                <h3>Commercial Painting</h3>
+                <p>Enhance your business space with professional painting solutions.</p>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-house-user"></i>
+                <h3>Residential Painting</h3>
+                <p>Transform your home with vibrant colors and long-lasting finishes.</p>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                <i class="fas fa-fill-drip"></i>
+                <h3>Custom Finishes</h3>
+                <p>Get unique textures and finishes tailored to your style.</p>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                <i class="fas fa-spray-can"></i>
+                <h3>Spray Painting</h3>
+                <p>For a smooth, flawless application on any surface.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Works</h2>
+            <p class="portfolio-desc" data-aos="fade-up" data-aos-delay="100">
+                See the transformation! Drag the slider to view the before and after results of our painting projects.
+            </p>
+
+            <div class="before-after-slider" data-aos="fade-up" data-aos-delay="200">
+                <!-- Image Wrapper for Auto Slider -->
+                <div class="slider-container">
+                    <!-- Dynamic Before/After Slide (8 slides) -->
+                    <div class="slider-track">
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="assets/images/1.jpg" alt="Before">
+                                <span class="label before-label">Before</span>
+                            </div>
+                            <div class="after">
+                                <img src="assets/images/h1.png" alt="After">
+                                <span class="label after-label">After</span>
+                            </div>
+                            <div class="slider-handle"><!-- <span class="slider-tooltip">Drag me</span> --></div>
+                        </div>
+
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="assets/images/2.jpg" alt="Before">
+                                <span class="label before-label">Before</span>
+                            </div>
+                            <div class="after">
+                                <img src="assets/images/h2.png" alt="After">
+                                <span class="label after-label">After</span>
+                            </div>
+                            <div class="slider-handle"><!-- <span class="slider-tooltip">Drag me</span> --></div>
+                        </div>
+
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="assets/images/3.jpg" alt="Before">
+                                <span class="label before-label">Before</span>
+                            </div>
+                            <div class="after">
+                                <img src="assets/images/h3.png" alt="After">
+                                <span class="label after-label">After</span>
+                            </div>
+                            <div class="slider-handle"><!-- <span class="slider-tooltip">Drag me</span> --></div>
+                        </div>
+
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="assets/images/4.jpg" alt="Before">
+                                <span class="label before-label">Before</span>
+                            </div>
+                            <div class="after">
+                                <img src="assets/images/h4.png" alt="After">
+                                <span class="label after-label">After</span>
+                            </div>
+                            <div class="slider-handle"><!-- <span class="slider-tooltip">Drag me</span> --></div>
+                        </div>
+
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="assets/images/5.jpg" alt="Before">
+                                <span class="label before-label">Before</span>
+                            </div>
+                            <div class="after">
+                                <img src="assets/images/h5.png" alt="After">
+                                <span class="label after-label">After</span>
+                            </div>
+                            <div class="slider-handle"><!-- <span class="slider-tooltip">Drag me</span> --></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Indicator Dots -->
+                <div class="portslider-indicators"></div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="testimonials" class="testimonials">
+    <div class="container">
+        <h2 class="section-title test-title" data-aos="fade-up">What Our Clients Say</h2>
+        <p class="testimonials-desc" data-aos="fade-up" data-aos-delay="100">
+            See what our happy clients have to say about our services.
+        </p>
+
+        <div class="testimonial-slider">
+            <div class="testimonial active" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/images/1.jpg" alt="Client 1">
+                <p>"The painting work was top-notch! My house looks beautiful and fresh. Highly recommend!"</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h4>- Chinedu Okafor</h4>
+            </div>
+
+            <div class="testimonial" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/images/2.jpg" alt="Client 2">
+                <p>"They did an amazing job with my office. Professional and on time!"</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h4>- Aisha Bello</h4>
+            </div>
+
+            <div class="testimonial" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/images/3.jpg" alt="Client 3">
+                <p>"Great attention to detail. The colors are perfect and my family loves it!"</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>- Tunde Adebayo</h4>
+            </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="testimonial-indicators">
+            <span class="testimonial-indicator active" onclick="currentTestimonial(0)"></span>
+            <span class="testimonial-indicator" onclick="currentTestimonial(1)"></span>
+            <span class="testimonial-indicator" onclick="currentTestimonial(2)"></span>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2 data-aos="fade-up">Let's Connect</h2>
+        <p data-aos="fade-up">Reach out to us for inquiries, quotes, or collaborations.</p>
+
+        <div class="contact-content">
+           <!-- Contact Form -->
+<form id="contactForm" class="contact-form" data-aos="fade-right" onsubmit="sendContact(event)">
+    <h3>Send Us a Message</h3>
+    <div class="input-group">
+        <input type="text" id="name" placeholder="Full Name" required>
+    </div>
+    <div class="input-group">
+        <input type="email" id="email" placeholder="Email Address" required>
+    </div>
+    <div class="input-group">
+        <input type="text" id="phone" placeholder="Phone Number" required>
+    </div>
+    <div class="input-group">
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+    </div>
+    <button type="submit" class="btn">Send Message</button>
+</form>
+            
+
+            <!-- Contact Details -->
+            <div class="contact-details" data-aos="fade-roght">
+                <h3>Our Contact Details</h3>
+                <div class="info">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+234 812 345 6789</p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@benizoba.ng</p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Paint Street, Lagos, Nigeria</p>
+                </div>
+
+                <!-- Business Hours -->
+                <div class="business-hours">
+                    <h3>Business Hours</h3>
+                    <p><strong>Mon - Fri:</strong> 9:00 AM - 6:00 PM</p>
+                    <p><strong>Sat:</strong> 10:00 AM - 4:00 PM</p>
+                    <p><strong>Sun:</strong> Closed</p>
+                </div>
+
+                <!-- Social Media -->
+                <div class="social-icons">
+                    <h3>Follow Us</h3>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="map" data-aos="fade-up">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31714.09776588892!2d3.3792054194488513!3d6.524379265174032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8fdd!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1615584365512" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+
+<!-- Preloader -->
+<div id="preloader">
+    <div class="spinner"></div>
+</div>
+
+<section id="faq" class="faq-section">
+    <h2 data-aos="fade-up">Frequently Asked Questions</h2>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="question" onclick="toggleFAQ(1)">
+                <h3>What services do you offer?</h3>
+                <span class="icon">+</span>
+            </div>
+            <div class="answer" id="faq1">
+                <p>We provide house painting, interior and exterior painting, and custom paint finishes.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleFAQ(2)">
+                <h3>How long does a painting project take?</h3>
+                <span class="icon">+</span>
+            </div>
+            <div class="answer" id="faq2">
+                <p>The duration depends on the size and complexity of the project, but most projects take 3-5 days.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleFAQ(3)">
+                <h3>Do you offer a warranty for your services?</h3>
+                <span class="icon">+</span>
+            </div>
+            <div class="answer" id="faq3">
+                <p>Yes, we offer a 1-year warranty on all painting jobs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Logo & About -->
+            <div class="footer-section about" data-aos="fade-up">
+                <h2>Benizoba.ng</h2>
+                <p>We transform spaces with expert painting services, delivering quality and elegance to every home and office.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section links" data-aos="fade-up">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section contact" data-aos="fade-up">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +234 812 345 6789</p>
+                <p><i class="fas fa-envelope"></i> info@benizoba.ng</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Paint Street, Lagos, Nigeria</p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-section social" data-aos="fade-up">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 HousePainting.ng | All Rights Reserved.</p>
+    </div>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2348123456789" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Live Chat Button -->
+    <!-- <button id="liveChatBtn">
+        <i class="fas fa-comments"></i> Live Chat
+    </button> -->
+</footer>
+
+
+<!-- Subscription Popup -->
+<form id="subscribeForm" onsubmit="subscribeUser(event)">
+    <div id="emailPopup" class="popup">
+        <div class="popup-content" data-aos="zoom-in">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Stay Updated!</h2>
+            <p>Subscribe to get the latest painting tips and offers.</p>
+            <input type="email" id="emailInput" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </div>
+    </div>
+</form>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/firebase.js"></script>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Show popup after 10 seconds
+        setTimeout(() => {
+            let popup = document.getElementById("emailPopup");
+            popup.style.visibility = "visible";
+            popup.style.opacity = "1";
+        }, 10000); // 10 seconds
+
+        // Close the popup
+        window.closePopup = function () {
+            let popup = document.getElementById("emailPopup");
+            popup.style.visibility = "hidden";
+            popup.style.opacity = "0";
+        };
+
+        // Handle email submission
+        window.submitEmail = function () {
+            let email = document.getElementById("emailInput").value;
+            if (email.trim() !== "") {
+                alert("Thank you for subscribing!");
+                closePopup();
+            } else {
+                alert("Please enter a valid email.");
+            }
+        };
+    });
+</script>
+</body>
+</html>
