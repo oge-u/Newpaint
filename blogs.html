@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Blog Posts</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/script.js"></script>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <section id="blogs">
+        <h2>All Blog Posts</h2>
+        
+        <div class="blog-card" onclick="loadBlog(1)">
+            <img src="assets/images/blog1.jpg" alt="Blog 1">
+            <h3>Top House Painting Trends in 2024</h3>
+            <p>Discover the latest color trends that will transform your home.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog-card" onclick="loadBlog(2)">
+            <img src="assets/images/blog2.jpg" alt="Blog 2">
+            <h3>How to Choose the Right Paint</h3>
+            <p>Find out how to select the best paint for your walls.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog-card" onclick="loadBlog(3)">
+            <img src="assets/images/blog3.jpg" alt="Blog 3">
+            <h3>DIY Painting vs. Hiring a Professional</h3>
+            <p>Should you paint your house yourself or hire an expert?</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </section>
+
+    <!-- Full Blog Content (Initially Hidden) -->
+    <section id="blog-details" class="hidden">
+        <button onclick="goBack()">← Back to Blogs</button>
+        <div id="blog-content"></div>
+    </section>
+
+</body>
+</html>
